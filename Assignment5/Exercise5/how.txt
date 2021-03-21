@@ -1,0 +1,1 @@
+struct changes the storing behaviour of the initiliazed variables. Struct uses contiguous memory wihch means if variables are created in a serial way, they are stored side by side in same order. So after storing username in memory, check_pin is allocated next to it with no free memory between them. If we didnt use a struct than the memory allocation would be non-contiguous.
